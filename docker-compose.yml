@@ -23,20 +23,21 @@ services:
     environment:
       - HOST=0.0.0.0
       - PORT=8888
-      - AWS_ACCESS_KEY_ID=dummy
-      - AWS_SECRET_ACCESS_KEY=dummy
-      - AWS_REGION=us-east-1
-
-  admin:
-    image: instructure/dynamo-local-admin
-    ports:
-      - "8001:8001"
-    environment:
-      - HOST=0.0.0.0
-      - PORT=8001
       - AWS_ACCESS_KEY_ID=key
       - AWS_SECRET_ACCESS_KEY=secret
       - AWS_REGION=us-east-1
+
+#  admin:
+#    image: books/books-admin
+#    build: ./admin/.
+#    ports:
+#      - "8001:8001"
+#    environment:
+#      - HOST=0.0.0.0
+#      - PORT=8001
+#      - AWS_ACCESS_KEY_ID=key
+#      - AWS_SECRET_ACCESS_KEY=secret
+#      - AWS_REGION=us-east-1
 
   dynamodb:
     image: amazon/dynamodb-local:latest

@@ -1,0 +1,16 @@
+{
+  "name": "books_api",
+  "version": "1.0.0",
+  "description": "Endpoints for books database",
+  "author": "Zachary Heusinkveld <ferrous777@comcast.net>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.635.0",
+    "express": "^4.16.1",
+    "line-reader": "^0.4.0",
+    "performance": "^1.1.1"
+  }
+}
